@@ -1,13 +1,4 @@
-#include <iostream>
-
-
-#include <iostream>
-#include <string>
-
-
-void getUserSelection();
-
-void displayWelcomeScreen();
+#include "game_functions.h"
 
 int main() {
     displayWelcomeScreen();

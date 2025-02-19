@@ -4,5 +4,6 @@ project(untitled1)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(untitled1 main.cpp
-        user_selection.cpp
-        user_selection.h)
+        game_functions.cpp
+        game_functions.h
+)
