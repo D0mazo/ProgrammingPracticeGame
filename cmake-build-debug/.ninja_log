@@ -1,0 +1,9 @@
+# ninja log v6
+19	519	7616882828526689	CMakeFiles/untitled1.dir/main.cpp.obj	ed64703d61da0c0c
+519	662	7616882833533503	untitled1.exe	3975f507d0bba957
+20	530	7616885404359849	CMakeFiles/untitled1.dir/user_selection.cpp.obj	44cbf86ea883f75
+12	442	7616885469612671	CMakeFiles/untitled1.dir/main.cpp.obj	ed64703d61da0c0c
+443	565	7616885473921124	untitled1.exe	29c0fd8fa4b5fc66
+17	500	7616886440466825	CMakeFiles/untitled1.dir/user_selection.cpp.obj	44cbf86ea883f75
+12	464	7616886557750546	CMakeFiles/untitled1.dir/main.cpp.obj	ed64703d61da0c0c
+464	564	7616886562271013	untitled1.exe	29c0fd8fa4b5fc66
