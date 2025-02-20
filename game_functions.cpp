@@ -14,16 +14,19 @@ void getUserSelection() {
     std::string name;
     int level;
 
+
     std::cout << "Enter your name: ";
+
     std::cin.ignore(); // To ignore any leftover newline character in the buffer
     std::getline(std::cin, name);
-
+    std::cout << "********************************************" << std::endl;
     std::cout << "\n";
-    std::cout << "Choose a level:\n";
+    std::cout << "Choose a level (Enter your choice (1-3):\n";
     std::cout << "1. Easy\n";
     std::cout << "2. Medium\n";
     std::cout << "3. Hard\n";
-    std::cout << "Enter your choice (1-3): ";
+    std::cout << "********************************************" << std::endl;
+
     std::cin >> level;
 
     while (level < 1 || level > 3) {
