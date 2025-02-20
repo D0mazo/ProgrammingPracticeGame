@@ -1,12 +1,13 @@
 #include "game_functions.h"
+#include <ctime>
 
 void displayWelcomeScreen() {
-    std::cout << std::string(consoleWidth, '*') << std::endl;
-    std::cout << std::setw((consoleWidth + 12) / 2) << "SHOOTING GAME" << std::endl; // Centered title
-    std::cout << std::string(consoleWidth, '*') << std::endl;
-    std::cout << std::setw((consoleWidth + 26) / 2) << "Welcome to the Shooting Game!" << std::endl; // Centered welcome message
-    std::cout << std::setw((consoleWidth + 22) / 2) << "Get ready to test your skills." << std::endl; // Centered message
-    std::cout << "\n";
+    std::cout << "********************************************" << std::endl;
+    std::cout << "                SHOOTING GAME" << std::endl;
+    std::cout << "********************************************" << std::endl;
+    std::cout << "         Welcome to the Shooting Game! " << std::endl;
+    std::cout << "         Get ready to test your skills." << std::endl;
+    std::cout << "********************************************" << std::endl;
 }
 
 void getUserSelection() {

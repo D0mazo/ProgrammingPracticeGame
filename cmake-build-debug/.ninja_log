@@ -1,10 +1,10 @@
 # ninja log v6
 23	608	7616913702195157	CMakeFiles/untitled1.dir/main.cpp.obj	ed64703d61da0c0c
-653	782	7616890214049028	untitled1.exe	29c0fd8fa4b5fc66
+35	128	7616914070969370	untitled1.exe	46dd7fedd19ca18a
 122	971	7616903193696456	CMakeFiles/untitled1.dir/spaceship_movement.cpp.obj	99c057b07bf377b7
 27	641	7616912565851745	CMakeFiles/untitled1.dir/user_selection.cpp.obj	44cbf86ea883f75
 117	972	7616903193643506	CMakeFiles/untitled1.dir/spaceship.cpp.obj	93b0744c449d3a61
-20	808	7616914069724332	build.ninja	6e3cb4de4566cd4f
+2	329	7616914938769317	build.ninja	6e3cb4de4566cd4f
 29	648	7616913702247142	CMakeFiles/untitled1.dir/game_functions.cpp.obj	6f705bc7a8c215bb
-2	329	7616914069724332	build.ninja	6e3cb4de4566cd4f
-35	128	7616914070969370	untitled1.exe	46dd7fedd19ca18a
+26	1326	7617795565701031	CMakeFiles/untitled1.dir/game_functions.cpp.obj	6f705bc7a8c215bb
+1328	1872	7617795578722235	untitled1.exe	46dd7fedd19ca18a
