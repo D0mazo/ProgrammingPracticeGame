@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(untitled1 main.cpp
         game_functions.cpp
         game_functions.h
+        spaseship.cpp
+        spaseship.h
 )
