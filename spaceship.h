@@ -36,4 +36,4 @@ public:
     }
 };
 
-#endif // SPACESHIP_H
+#endif
