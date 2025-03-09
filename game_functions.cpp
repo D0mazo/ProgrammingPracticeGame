@@ -11,13 +11,17 @@ void displayWelcomeScreen() {
     std::cout << "********************************************" << std::endl;
 }
 
-void getUserSelection() {
+std::pair<std::string, int> getUserSelection() {
     std::string name;
     int level;
 
     std::cout << "Enter your name: ";
-    std::cin.ignore();
+    // Only ignore if there's something to ignore from previous input
+    if (std::cin.rdbuf()->in_avail() > 0) {
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
     std::getline(std::cin, name);
+
     std::cout << "********************************************" << std::endl;
     std::cout << "\n";
     std::cout << "Choose a level (Enter your choice (1-3):\n";
@@ -33,6 +37,7 @@ void getUserSelection() {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::cout << "Invalid choice! Please enter a number between 1 and 3.\n";
         } else {
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear buffer after valid input
             break;
         }
     }
@@ -46,5 +51,6 @@ void getUserSelection() {
     }
     std::cout << " level.\n";
     std::cout << "********************************************" << std::endl;
-    std::cout << "        Press Space to start " << std::endl;
+
+    return std::make_pair(name, level);
 }

@@ -1,4 +1,4 @@
-
+// game_functions.h
 #ifndef GAME_FUNCTIONS_H
 #define GAME_FUNCTIONS_H
 
@@ -9,6 +9,6 @@
 const int consoleWidth = 50;
 
 void displayWelcomeScreen();
-void getUserSelection();
+std::pair<std::string, int> getUserSelection();  // Now returns name and level
 
 #endif // GAME_FUNCTIONS_H
