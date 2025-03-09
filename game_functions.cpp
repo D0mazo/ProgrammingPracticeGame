@@ -1,8 +1,6 @@
+// game_functions.cpp
 #include "game_functions.h"
-#include <ctime>
-#include <iostream>
-#include <string>
-#include <limits>
+#include "spaceship.h"
 
 void displayWelcomeScreen() {
     std::cout << "********************************************" << std::endl;
@@ -17,9 +15,8 @@ void getUserSelection() {
     std::string name;
     int level;
 
-
     std::cout << "Enter your name: ";
-    std::cin.ignore(); // To ignore any leftover newline character in the buffer
+    std::cin.ignore();
     std::getline(std::cin, name);
     std::cout << "********************************************" << std::endl;
     std::cout << "\n";
@@ -29,18 +26,14 @@ void getUserSelection() {
     std::cout << "3. Hard\n";
     std::cout << "********************************************" << std::endl;
 
-
-
     while (true) {
         std::cin >> level;
-
-        // Check if input is valid and within range
         if (std::cin.fail() || level < 1 || level > 3) {
-            std::cin.clear();  // Clear the error state
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::cout << "Invalid choice! Please enter a number between 1 and 3.\n";
         } else {
-            break; // Valid input, exit loop
+            break;
         }
     }
 
@@ -54,6 +47,4 @@ void getUserSelection() {
     std::cout << " level.\n";
     std::cout << "********************************************" << std::endl;
     std::cout << "        Press Space to start " << std::endl;
-
-
 }

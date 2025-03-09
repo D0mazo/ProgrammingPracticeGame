@@ -1,9 +1,10 @@
+
 #ifndef GAME_FUNCTIONS_H
 #define GAME_FUNCTIONS_H
 
 #include <iostream>
 #include <string>
-#include <iomanip>
+#include <limits>
 
 const int consoleWidth = 50;
 

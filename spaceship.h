@@ -15,7 +15,6 @@ private:
     int speed;
 
 public:
-
     Spaceship(std::string shipName = "Unnamed Ship",
               int lifeCount = 5,
               double power = 1000.0,
@@ -25,7 +24,6 @@ public:
         shotPower = power;
         speed = spd;
     }
-
 
     void describe() const {
         std::cout << "Spaceship Details:" << std::endl;
